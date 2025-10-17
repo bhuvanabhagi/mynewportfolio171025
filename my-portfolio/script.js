@@ -1,5 +1,6 @@
-// Year
+// Year + Animations + Scroll Progress + PDF Download
 document.addEventListener('DOMContentLoaded', () => {
+  // Update current year
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
@@ -22,4 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   reveal();
   window.addEventListener('scroll', reveal);
+
+  // Download PDF Functionality
+  const downloadBtn = document.getElementById('download-btn');
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', () => {
+      const element = document.body; // capture whole page
+
+      const opt = {
+        margin: 0.5,
+        filename: 'B_Bhuvaneswari_Portfolio.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(element).save();
+    });
+  }
 });

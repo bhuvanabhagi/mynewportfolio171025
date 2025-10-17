@@ -90,3 +90,10 @@ padding:20px;border-radius:18px;align-items:center;box-shadow:0 12px 36px rgba(0
   .profile-photo{width:130px;height:130px}
   .social-fixed{display:none}
 }
+
+@media print {
+  #download-btn,
+  .scroll-bar {
+    display: none !important;
+  }
+}

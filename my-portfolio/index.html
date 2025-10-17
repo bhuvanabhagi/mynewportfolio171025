@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+  <!-- html2pdf.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -58,7 +60,7 @@
       <h2>About Me</h2>
       <p>
         I am pursuing a B.Tech in Artificial Intelligence and Data Science at KL University, Hyderabad.
-        With hands-on experience in ML and DL — including a CNN-based speaker verification system —
+        With hands-on experience in ML and DL — including a CNN-based speaker verification system — 
         I enjoy building intelligent systems and creative web apps using Django and the MERN stack.
       </p>
     </section>
@@ -119,6 +121,11 @@
   <footer class="footer">
     <p>© <span id="year"></span> B. Bhuvaneswari — Designed with ❤️</p>
   </footer>
+
+  <!-- Floating PDF Download Button -->
+  <button id="download-btn" class="cta cta-primary" style="position:fixed;bottom:20px;right:20px;z-index:999;">
+    ⬇️ Download PDF
+  </button>
 
 </body>
 </html>
