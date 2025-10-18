@@ -13,8 +13,6 @@
 
 <body>
 
-
-
   <!-- Scroll Progress Bar -->
   <div class="scroll-bar"></div>
 
@@ -47,7 +45,6 @@
           <div class="cta-row">
             <a href="#projects" class="cta cta-primary">View Projects</a>
             <a href="#contact" class="cta">Contact</a>
-            <button id="download-btn" class="cta cta-primary" data-resume="my-portfolio\resume.pdf" type="button">⬇️ Download Resume</button>
           </div>
           <div class="skill-badges">
             <span>Python</span><span>Machine Learning</span><span>Django</span><span>React Native</span><span>SQL</span>
@@ -71,7 +68,7 @@
     <section id="education" class="card">
       <h2>Education</h2>
       <div class="grid-2">
-        <div><h3>B.Tech in AI & DS</h3><p><strong>KL University, Hyderabad</strong> • CGPA: 9.68 • Third year</p></div>
+        <div><h3>B.Tech in AI & Data Science</h3><p><strong>KL University, Hyderabad</strong> • CGPA: 9.54 • Second Year</p></div>
         <div><h3>Intermediate (MPC)</h3><p><strong>Sri Chaitanya</strong> • Percentage: 97.4 (2023)</p></div>
       </div>
       <div class="grid-2" style="margin-top:12px;">
@@ -82,12 +79,12 @@
     <section id="projects" class="card">
       <h2>Projects (summarised)</h2>
       <div class="project-list">
-        <article class="project"><h4>Real-Time Multi-Camera Smart Surveillance System Using IP cameras</h4><p>Developing a real-time AI-powered multi-camera smart surveillance system using IP cameras, OpenCV, and deep learning for intelligent video analytics and event detection.(Currently Working)</p></article>
         <article class="project"><h4>CNN-based Speaker Verification</h4><p>Implemented a CNN-based speaker identification system achieving 88% accuracy on a 50-speaker dataset.</p></article>
         <article class="project"><h4>QuizDeck (React Native)</h4><p>Quiz app with flashcards, timed challenges, scoring, and friend interaction.</p></article>
         <article class="project"><h4>Menu Price Optimizer (Django + Simplex)</h4><p>Optimizes restaurant menu prices using the Simplex Method for maximum profit.</p></article>
         <article class="project"><h4>PickYourHealth (Django)</h4><p>Generates personalized daily routines through health quizzes.</p></article>
         <article class="project"><h4>Water Purity Detection</h4><p>Real-time monitoring using a turbidity sensor.</p></article>
+        <article class="project"><h4>Tobacco Influence Analysis (Data Mining)</h4><p>Studied youth tobacco use influenced by ads, peers, and family factors.</p></article>
       </div>
     </section>
 
@@ -95,54 +92,40 @@
       <h2>Skills</h2>
       <div class="skills-grid">
         <div><h5>Languages</h5><p>C • Python • Java</p></div>
-        <div><h5>Frameworks & Tools</h5><p>React Native • MERN • Django • Jupyter • Fusion 360 • Open CV</p></div>
+        <div><h5>Frameworks & Tools</h5><p>React Native • MERN • Django • Jupyter • Fusion 360</p></div>
         <div><h5>Technologies</h5><p>Machine Learning • Deep Learning • SQL • MongoDB</p></div>
       </div>
     </section>
 
     <section id="certifications" class="card">
       <h2>Certifications</h2>
-      <ul><li>MongoDB Developer Certified</li><li>Certified Advanced Automation Professional</li><li>Python Programming — GeeksforGeeks</li><li>Deep Learning Bootcamp (Udemy)</li></ul>
+      <ul><li>MongoDB Developer Certified</li><li>Python Programming — GeeksforGeeks</li><li>Deep Learning Bootcamp (Udemy)</li></ul>
     </section>
 
     <section id="achievements" class="card">
       <h2>Achievements</h2>
-      <ul><li><strong>Tech Expo:</strong> Won First Prize for developing a real-time AI-powered multi-camera smart surveillance system.</li></ul>
       <ul><li><strong>Graph Masters:</strong> First Prize in Mathematical Game Competition</li></ul>
     </section>
 
     <section id="contact" class="card contact-card">
       <h2>Contact</h2>
       <p>Let’s connect! I’m open to collaborations, internships, and exciting opportunities.</p>
-        <div class="contact-actions-row">
-          <a href="https://www.linkedin.com/in/bhuvaneswari-bhagi-7ab35131a/" target="_blank" class="btn outline">LinkedIn</a>
-          <a href="https://github.com/bhuvanabhagi" target="_blank" class="btn outline">GitHub</a>
-        </div>
-
-        <form class="contact-form" id="contact-form">
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
-
-          <label for="email">Your email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Hi Bhuvaneswari — I'd like to talk about..." required></textarea>
-
-          <div style="display:flex;gap:8px;align-items:center;">
-            <button type="submit" class="btn send">Send via Email</button>
-            <button type="button" id="download-btn" class="cta cta-primary" data-resume="my-portfolio\resume.pdf" style="margin-left:auto;">⬇️ Download Resume</button>
-          </div>
-
-          <p class="note">Or, click <a href="mailto:bhagibhuvaneswari@gmail.com">bhagibhuvaneswari@gmail.com</a></p>
-          <p id="contact-feedback" class="note" style="display:none"></p>
-        </form>
+      <div class="contact-actions">
+        <a href="mailto:bhagibhuvaneswari@gmail.com" class="btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/bhuvaneswari-bhagi-7ab35131a/" target="_blank" class="btn outline">LinkedIn</a>
+        <a href="https://github.com/bhuvanabhagi" target="_blank" class="btn outline">GitHub</a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-<p>© <span id="year"></span> B. Bhuvaneswari — All rights reserved.</p>
+    <p>© <span id="year"></span> B. Bhuvaneswari — Designed with ❤️</p>
   </footer>
+
+  <!-- Floating PDF Download Button -->
+  <button id="download-btn" class="cta cta-primary" style="position:fixed;bottom:20px;right:20px;z-index:999;">
+    ⬇️ Download PDF
+  </button>
 
 </body>
 </html>
